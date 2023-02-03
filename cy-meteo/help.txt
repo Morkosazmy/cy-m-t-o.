@@ -1,0 +1,44 @@
+Le script permet de traiter un ou plusieurs types de données tels que : la température (-t),
+la pression atmosphérique (-p), 
+le vent (-w), 
+l'humidité (-m), 
+l'altitude de chaque station (-h).
+Au moins une de ces options doit être choisie pour que le script fonctionne, sinon un message d'erreur s'affichera.
+Il est possible d'activer plusieurs options sans limitation.
+Les options -t et -p doivent être accompagnées d'un mode :
+-t<mode> pour les températures.
+-p<mode> pour les pressions atmosphériques.
+Pour ces deux options, il faut indiquer la valeur du <mode> :
+
+-t<mode> pour les températures.
+
+-t1 produit les températures minimales, maximales et moyennes par station en ordre croissant de numéro de station.
+-t2 produit les températures moyennes par date/heure en ordre chronologique (moyenne sur toutes les stations).
+-t3 produit les températures par date/heure par station en ordre chronologique puis par ordre croissant d'identifiant de station.
+
+-p<mode> pour les pressions atmosphériques.
+
+-p1 produit les pressions minimales, maximales et moyennes par station en ordre croissant de numéro de station
+-p2 produit les pressions moyennes par date/heure en ordre chronologique (moyenne sur toutes les stations).
+-p3 produit les pressions par date/heure par station en ordre chronologique puis par ordre croissant d'identifiant de station.
+
+Pour ces deux options, il faut indiquer la valeur du <mode> :
+
+L'option -w pour le vent produit l'orientation moyenne et la vitesse moyenne des vents pour chaque station en ordre croissant d'identifiant de station.
+
+L'option -h pour l'altitude produit l'altitude pour chaque station en ordre décroissant.
+
+L'option -m pour l'humidité produit l'humidité maximale pour chaque station en ordre décroissant.
+
+Aide pour les arguments et options du script [LIEUX]:
+
+Le script permet de filtrer les données en utilisant des critères de position géographique.
+une seule option à la fois peut être activée.
+Ces options ne sont pas obligatoires, si aucune n'est activée, il n'y aura pas de limitation géographique sur les mesures.
+Les options de limitation géographique sont les suivantes :
+-F pour la France (métropole + Corse).
+-G pour la Guyane française.
+-S pour Saint-Pierre et Miquelon (île située à l'Est du Canada).
+-A pour les Antilles.
+-O pour l'Océan indien.
+-Q pour l'Antarctique.
